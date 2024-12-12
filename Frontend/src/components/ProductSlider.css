@@ -1,0 +1,207 @@
+.slider-container {
+    overflow: hidden; /* Ensures only visible items in the slider are shown */
+    padding: 20px;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 15px; /* Adds spacing between slider items */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-item {
+    flex: 0 0 auto; /* Ensures items are not squished */
+    width: 150px; /* Adjust as needed for your design */
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05); /* Adds zoom effect on hover */
+  }
+  
+  .product-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px; /* Add space between items */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+  
+  .slider-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 150px; /* Adjust item width as needed */
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .scroll-button.left {
+    left: 10px;
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.scroll-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-name {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* ProductSlider.css */
+
+/* Scroll Buttons */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
